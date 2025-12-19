@@ -1,0 +1,75 @@
+/* Container for all cards */
+.home-page {
+    padding-top: 5%;
+}
+.container-card {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* center horizontally */
+    padding: 40px 0;
+
+  }
+  
+  /* Flex container for cards */
+  .cards {
+    display: flex;                 /* row layout */
+    justify-content: space-between; /* space between cards */
+    align-items: center;           /* vertical alignment */
+    flex-wrap: wrap;               /* wrap on small screens */
+    gap: 20px;                     /* space between cards */
+  }
+  
+  /* Individual card */
+  .card {
+    flex: 1 1 45%;                 /* base 45% width, flexible */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    min-width: 280px;              /* prevent too small on mobile */
+  }
+  
+  /* Card content */
+  .card h2 {
+   
+    margin-bottom: 15px;
+    font-size: 30px;
+    background: #E8E8E8;
+    background: -webkit-linear-gradient(to right, #E8E8E8 0%, #3F2A53 63%);
+    background: -moz-linear-gradient(to right, #E8E8E8 0%, #3F2A53 63%);
+    background: linear-gradient(to right, #E8E8E8 0%, #3F2A53 63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+
+
+  }
+  
+  .card p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    padding-left: 0px;
+  }
+  
+  /* Image card */
+  .image img {
+    width: 70%;
+    height: auto;
+    margin-left: 100px;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  /* Responsive: stack cards vertically on small screens */
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%; /* full width */
+    }
+  }
+  /* Start  Cards section */
+  
+
+  
+  /* End   Cards section */
+  

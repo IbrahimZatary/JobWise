@@ -19,7 +19,7 @@ const NavBar = () => {
     /// if you are in home now >> 
     // Home page  → sticky on scroll
     const handleScroll = () => {
-      setIsSticky(window.scrollY > 80);
+      setIsSticky(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -46,8 +46,8 @@ const NavBar = () => {
       {/* Menu */}
       <div className="navbar-lists">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#footer">About us</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Footer">About us</a></li>
           <li>
             <button className="call-to-action">Start Your Journey</button>
           </li>
