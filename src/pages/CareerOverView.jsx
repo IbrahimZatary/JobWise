@@ -2,7 +2,8 @@ const CareerView = function ()
 {
     return (
         <>
-        <h1> this is CareerView </h1>
+      
+       
         </>
     )
 }

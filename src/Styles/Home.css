@@ -1,3 +1,13 @@
+/* =====================================================
+   Global Font Import
+   ===================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-color: #3F2A53;
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Container for all cards */
 .home-page {
     padding-top: 5%;
@@ -59,7 +69,9 @@
     margin-left: 100px;
     border-radius: 10px;
     display: block;
-  }
+    filter: saturate(200%);
+    -webkit-filter: saturate(200%);
+}
   
   /* Responsive: stack cards vertically on small screens */
   @media (max-width: 768px) {
@@ -67,9 +79,162 @@
       flex: 1 1 100%; /* full width */
     }
   }
+
+
+  /* ----------------------------------------------------------------------- */
   /* Start  Cards section */
-  
+  .text-area
+  {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10%;
+  }
+/* Section wrapper */
+/* Section wrapper */
+.section-cards {
+  width: 100%;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: #000; /* black background */
+}
+
+/* Cards container */
+.cards-common {
+  width: 60%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+/* Individual card */
+.card-job {
+  position: relative;
+  background: #0f0f14; /* slightly lighter than black */
+  border-radius: 16px;
+  padding: 2.2rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+
+/* Hover effect */
+.card-job:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px #3f2a53;
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+}
+
+/* Title */
+.card-job h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.9rem;
+}
+
+/* Description */
+.card-job p {
+  font-size: 1rem;
+  color: #cfcfe6;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Button */
+/* From Uiverse.io by reshades */ 
+.button {
+  background-color: #ffffff00;
+  color: #fff;
+  width: 8.5em;
+  height: 2.9em;
+  border: #ffff 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+}
+
+.button svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.button:hover svg {
+  transform: translateX(5px);
+}
+
+.text {
+  margin: 0 1.5em
+}
+
+
 
   
   /* End   Cards section */
-  
+    /* ----------------------------------------------------------------------- */
+  /* start   towers background section */
+
+  .photo {
+    width: 100%;
+    height: 90vh; /* almost full screen height */
+    background-image: url('../assets/NY.jpg'); /* your background image path */
+    background-size: cover; /* cover full area */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    position: relative;
+}
+
+.section-photo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.quote {
+    color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+.quote p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--main-color);
+}
+.quote h3 {
+  display: inline-block;
+  text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: black;
+
+}
+
+
+  /* End   towers background section */

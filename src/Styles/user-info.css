@@ -1,0 +1,246 @@
+
+/* =====================================================
+   Global Font Import
+   ===================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-color: #3F2A53;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+/* ===========================
+   User Info Section Styling
+=========================== */
+.user-info {
+    padding-top: 90px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  
+  .container-info {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+  }
+  
+  .side {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .bg-color {
+    background-color: #562e7b; /* main color for right side */
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* ===========================
+     Form Inputs
+  =========================== */
+
+  .user-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .user-input span {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .user-input input {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  .user-input .age {
+    width: 30%;
+  }
+  
+  .user-input input:focus {
+    border-color: #562e7b;
+    box-shadow: 0 0 5px rgba(86, 46, 123, 0.5);
+  }
+  
+  /* ===========================
+     Radio Buttons
+  =========================== */
+  .passion-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.2s ease;
+  }
+  
+  .passion-option input[type="radio"] {
+    accent-color: #562e7b; /* modern colored radio */
+    margin-right: 0.7rem;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .passion-option span {
+    cursor: pointer;
+  }
+  
+  .passion-option:hover {
+    color: #562e7b;
+  }
+  
+  /* ===========================
+     Headings
+  =========================== */
+  .passions-radio h3 {
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  /* ===========================
+   'Other' Passion Text Input
+=========================== */
+.passion-option input[type="text"] {
+    padding: 0.6rem 1rem;
+    margin-left: 0.7rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    width: 60%; /* adjust as needed */
+    transition: all 0.3s ease;
+  }
+  
+  .passion-option input[type="text"]:focus {
+    border-color: #562e7b;
+    box-shadow: 0 0 5px rgba(86, 46, 123, 0.5);
+  }
+  
+  .passion-option span {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Optional: hover effect for the whole label */
+  .passion-option:hover {
+    color: #562e7b;
+  }
+  .submit-btn {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  /* --------------------------Skills----------------------------------------- */
+
+  /* ===========================
+     Radio Buttons
+  =========================== */
+  .skill-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.2s ease;
+  }
+  
+  .skill-option input[type="radio"] {
+    accent-color: #562e7b; /* modern colored radio */
+    margin-right: 0.7rem;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .skill-option span {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .skill-option:hover {
+    color: #562e7b;
+  }
+  
+  /* ===========================
+     Headings
+  =========================== */
+  .skill-radio h3 {
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  /* ===========================
+   'Other' Passion Text Input
+=========================== */
+.skill-option input[type="text"] {
+    padding: 0.6rem 1rem;
+    margin-left: 0.7rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    width: 50%; /* adjust as needed */
+    transition: all 0.3s ease;
+  }
+  
+  .skill-option input[type="text"]:focus {
+    border-color: #562e7b;
+    box-shadow: 0 0 5px rgba(86, 46, 123, 0.5);
+  }
+  
+  .skill-option span {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Optional: hover effect for the whole label */
+  .skill-option:hover {
+    color: #562e7b;
+  }
+  .submit-btn {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #562e7b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+  
+  .submit-btn:hover {
+    background-color: #000000;
+  }
+  
+  
+  
+  
