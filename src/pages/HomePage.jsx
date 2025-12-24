@@ -1,6 +1,8 @@
 import '../Styles/Home.css'
 import imageFirstLokk from '../assets/man-climp-final.png'
-import backGroundPicture from '../assets/NY.jpg'
+
+
+
 const Home = function ()
 {
     return (
@@ -118,6 +120,9 @@ const Home = function ()
 
 
                     {/* End  lanscape + quoete*/}
+                    {
+                        
+                    }
 
         </div>
         </>

@@ -1,0 +1,38 @@
+/* =====================================================
+   Global Font Import
+   ===================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-color: #3F2A53;
+  font-family: 'Montserrat', sans-serif;
+}
+.error
+{
+    text-align: center;
+    margin: 17%;
+    color: white;
+    margin-bottom: 60px;
+}
+p
+{
+    margin: 20px;
+}
+.link_me
+{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    border: 2px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+ 
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.link_me:hover
+{
+    cursor: pointer;
+}

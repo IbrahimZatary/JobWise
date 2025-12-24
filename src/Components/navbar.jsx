@@ -1,8 +1,16 @@
 import '../Styles/navbar.css';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
+  //Navigate to route when press a button 
+  const navigate = useNavigate();
+  const handleSubmit =()=>{
+    navigate('/user');
+  }
+
+  // Navbar sticky or fixed
   const location = useLocation();
   const isHome = location.pathname === "/";
 
@@ -49,7 +57,14 @@ const NavBar = () => {
           <li><a href="#Home">Home</a></li>
           <li><a href="#Footer">About us</a></li>
           <li>
-            <button className="call-to-action">Start Your Journey</button>
+          
+  
+    <button
+      type='button'
+      onClick={handleSubmit}
+      className="call-to-action"> Start Your Journey
+      </button>
+      
           </li>
         </ul>
       </div>
