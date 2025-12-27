@@ -14,17 +14,24 @@
   color: #ffffff;
   padding: 2rem 1rem;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 10%;
 }
 
 /* HEADER */
 .career-header {
   text-align: center;
   margin-bottom: 3rem;
+  border: var(--main-color) solid 1px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 .career-header h1 {
-  color: #ffffff;
-  font-size: 2.5rem;
+  color: white;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -47,7 +54,24 @@
 
 .user-name {
   font-weight: bold;
+  padding: 10px;
   font-size: 1.1rem;
+  
+}
+.user-meta {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.482);
+  padding-bottom: 30px;
+}
+/* Data */
+.passion-label 
+{
+  font-weight:bold;
+  margin: 2px;
+}
+.skills-label 
+{
+  font-weight:bold;
+  margin: 2px;
 }
 
 /* JOBS GRID */
@@ -78,12 +102,19 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin: 10rem;
+
+}
+.job-card .rank-number
+{
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: #ffffff8e;
 }
 
 .job-rank {
   background: #3F2A53;
-  color: white;
+  /* color: white; */
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -96,13 +127,55 @@
 .job-title {
   color: #ffffff;
   font-size: 1.3rem;
-  margin: 0;
+  text-align: center;
+  margin: 15px;
+  border: 1px solid white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+ h4 {
+  text-align: center;
+ 
 }
 
 .job-description {
-  color: #cccccc;
+  color: #5b5b5b86;
   line-height: 1.5;
   margin-bottom: 1.5rem;
+}
+.job-description-section p 
+{
+  color: #ffffffc5;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+.job-description-section h4 {
+  text-align: center;
+ 
+}
+.job-card .skills-section 
+{
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+
+}
+.job-card .salaries-section
+{
+  margin: 10px;
+}
+.job-card .salaries-section .bar-label 
+{
+  margin: 5px;
+  font-weight: bold;
+}
+.job-card .salaries-section .salary-card
+{
+  margin-top: 10px;
+  
 }
 
 /* =====================================================
@@ -111,32 +184,62 @@
 .courses-section h4 {
   color: #ffffff;
   margin-bottom: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.479);
+  padding-top:20px ;
 }
+
+
+
+
 
 .course-card {
-  background: #2a2a2a;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  border-left: 4px solid #3F2A53;
-  overflow: hidden; /* Fix for image radius */
+      border-top: 1px solid #000;
+      background: #2a2a2a;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      border-left: 4px solid #3F2A53;
+      overflow: hidden; /* Fix for image radius */
 }
+
+
+.course-card .course-image-container
+{
+  text-align: center;
+}
+
 
 .course-image {
-  width: 100%;
-  height: 100px; /* Smaller height */
-  overflow: hidden;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 50px;
+  width: 30vh;
+  height: 30vh;
+  /*Smallerheight*/overflow: hidden;
   position: relative;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
+
+
 .course-image img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
-  border-radius: 8px 8px 0 0; /* Rounded top corners only */
+  border-radius: 20px ;
+  -webkit-border-radius: 20px ;
+  -moz-border-radius: 20px ;
+  -ms-border-radius: 20px ;
+  -o-border-radius: 20px ;
 }
+
 
 .course-platform {
   position: absolute;
+  font-weight: 600;
   top: 0.5rem;
   left: 0.5rem;
   background: rgba(0, 0, 0, 0.7);
@@ -164,21 +267,26 @@
   line-height: 1.4;
 }
 
-.course-btn {
-  color: #3F2A53;
+.course-action-btn {
+  color: #ffffff;
   background: transparent;
-  border: 1px solid #3F2A53;
+  border: 1px solid white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9rem;
   width: 100%;
   margin-top: 0.5rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
-.course-btn:hover {
-  background: #3F2A53;
-  color: white;
+.course-action-btn:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 /* =====================================================
@@ -244,7 +352,7 @@
    ===================================================== */
 .action-section {
   text-align: center;
-  margin-top: 3rem;
+  margin: 3rem;
   padding-top: 2rem;
   border-top: 1px solid #333;
 }
@@ -259,6 +367,7 @@
 
 .restart-btn,
 .print-btn {
+  margin: 20px;
   background: #3F2A53;
   color: white;
   border: none;
@@ -266,12 +375,26 @@
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  min-width: 200px;
+  min-width: 100px;
 }
 
 .restart-btn:hover,
 .print-btn:hover {
-  background: #2a1a3a;
+  cursor: pointer;
+  background-color: white;
+  color: #000;
+
+}
+.scroll-top-btn
+{
+ 
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 /* DISCLAIMER */

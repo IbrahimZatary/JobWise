@@ -424,10 +424,7 @@ const CareerOverView = () => {
             Your Personalized Career Paths
           </h1>
           
-          <p className="career-subtitle">
-            Based on your unique profile, we've selected the top {recommendations?.jobs?.length || 3} career paths 
-            tailored specifically for your skills and interests in the Middle East region.
-          </p>
+          
           
           {/* User Info Summary */}
           {userData && (
@@ -444,6 +441,7 @@ const CareerOverView = () => {
                     <span className="user-age">
                       <span className="meta-label">Age:</span> {userData.userInfo?.age || 'N/A'} years
                     </span>
+                    <br />
                     <span className="user-email">
                       <span className="meta-label">Email:</span> {sanitizeText(userData.userInfo?.email, 25)}
                     </span>
@@ -453,8 +451,8 @@ const CareerOverView = () => {
               
               <div className="user-passion-section">
                 <div className="passion-label">
-                  <span className="passion-icon">🔥</span>
-                  Primary Passion:
+                  
+                   Passions Selected:
                 </div>
                 <div className="passion-value">
                   {sanitizeText(userData.passion || 'Not specified', 50)}
@@ -465,7 +463,7 @@ const CareerOverView = () => {
                 <div className="user-skills-section">
                   <div className="skills-label">
                     <span className="skills-icon">🛠️</span>
-                    Key Skills:
+                     Skills Selected:
                   </div>
                   <div className="skills-tags">
                     {userData.skills.slice(0, 5).map((skill, idx) => (
@@ -489,7 +487,7 @@ const CareerOverView = () => {
             {aiGenerated ? (
               <>
                 <span className="ai-icon"></span>
-                <span>Recommendations powered by JobWise</span>
+                <span></span>
               </>
             ) : (
               <>
@@ -572,7 +570,8 @@ const CareerOverView = () => {
               {/* Salary Information */}
               <div className="salaries-section">
                 <div className="salaries-header">
-                  <span className="salaries-icon">💰</span>
+                  <span className="salaries-icon">
+    </span>
                   <h4>Expected Monthly Salaries</h4>
                 </div>
                 
@@ -735,9 +734,9 @@ const CareerOverView = () => {
           
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
-            className="action-btn scroll-top-btn"
+            className="scroll-top-btn"
           >
-            <span className="btn-icon">↑</span>
+          
             Back to Top
           </button>
         </div>

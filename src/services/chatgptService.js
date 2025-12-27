@@ -16,8 +16,9 @@ Passion/Interest: ${passion}
 Skills: ${skills.join(', ') || 'Various skills'}
 
 Focus on Middle East opportunities (Jordan and UAE specifically).
-Include realistic monthly salary ranges for both countries.
+Include realistic junior monthly salary ranges for both countries.
 Suggest 2 online courses for each job with platform names.
+Important : Be Sure to return valid course exact url of the course in the platform
 
 Return ONLY valid JSON format:
 {

@@ -364,16 +364,16 @@ const UserInformation = () => {
   // Get passion icon
   const getPassionIcon = (passion) => {
     const icons = {
-      "Computer Science": "💻",
-      "Engineering": "⚙️",
-      "Art & Design": "🎨",
-      "Cooking": "👨‍🍳",
-      "Business": "💼",
-      "Accounting": "📊",
-      "Healthcare": "🏥",
-      "Marketing": "📢",
-      "Education": "📚",
-      "Architecture": "🏛️"
+      "Computer Science": "",
+      "Engineering": "",
+      "Art & Design": "",
+      "Cooking": "",
+      "Business": "",
+      "Accounting": "",
+      "Healthcare": "",
+      "Marketing": "",
+      "Education": "",
+      "Architecture": ""
     };
     
     for (const [key, icon] of Object.entries(icons)) {
@@ -442,8 +442,8 @@ const UserInformation = () => {
               <div className="loading-step active">
                 <div className="step-check">↻</div>
                 <div className="step-content">
-                  <div className="step-title">Connecting to AI Engine</div>
-                  <div className="step-description">Communicating with Google Gemma 3</div>
+                  <div className="step-title">Connecting to Our Engine</div>
+                  <div className="step-description">Communicating...</div>
                 </div>
               </div>
               
@@ -458,7 +458,7 @@ const UserInformation = () => {
             
             <div className="estimated-time-badge">
               <span className="time-icon">⏱️</span>
-              Estimated time: 10-20 seconds
+              Estimated time: 10-15 seconds
             </div>
           </div>
         </div>
@@ -474,7 +474,7 @@ const UserInformation = () => {
                 Tell Us About Yourself
               </h1>
               <p className="form-subtitle">
-                Fill in your details to get personalized career recommendations powered by AI
+                Fill in your details to get personalized career recommendations 
               </p>
               
               <div className="form-progress">
@@ -495,7 +495,7 @@ const UserInformation = () => {
                   Personal Information
                 </h2>
                 <p className="section-description">
-                  We need some basic information to personalize your experience
+                  We need basic information to personalize your experience
                 </p>
               </div>
 
@@ -541,7 +541,7 @@ const UserInformation = () => {
                 <div className="input-group">
                   <label htmlFor="age" className="input-label">
                     Age <span className="required">*</span>
-                    <span className="input-hint">Must be between 15-80 years</span>
+                    <span className="input-hint"></span>
                   </label>
                   <div className="age-input-container">
                     <input
@@ -768,12 +768,12 @@ const UserInformation = () => {
                   {isLoading ? (
                     <>
                       <span className="btn-spinner"></span>
-                      Processing with AI...
+                      Processing with Our system...
                     </>
                   ) : (
                     <>
                       <span className="btn-icon">🚀</span>
-                      Get AI Career Recommendations
+                      Get Career Recommendations
                     </>
                   )}
                 </button>
@@ -806,7 +806,7 @@ const UserInformation = () => {
                     <span className="privacy-title">Your Privacy Matters</span>
                   </div>
                   <p className="privacy-text">
-                    Your data is processed securely via Google's AI services. 
+                    Your data is processed securely with JobWise. 
                     We don't store your personal information permanently. 
                     All data is encrypted and deleted after processing.
                   </p>
@@ -826,7 +826,7 @@ const UserInformation = () => {
               <div className="info-panel-content">
                 <div className="info-header">
                   <h3 className="info-title">
-                    <span className="info-icon">🎯</span>
+                    <span className="info-icon"></span>
                     How JobWise Works
                   </h3>
                   <p className="info-subtitle">
@@ -850,7 +850,7 @@ const UserInformation = () => {
                     <div className="step-content">
                       <h4 className="step-title">AI Analysis</h4>
                       <p className="step-description">
-                        Our AI analyzes your profile using Google's Gemma 3 technology to understand your potential.
+                        Our AI analyzes your profile using JobWise system to understand your potential.
                       </p>
                     </div>
                   </div>
@@ -869,7 +869,7 @@ const UserInformation = () => {
                 <div className="ai-features-card">
                   <div className="ai-card-header">
                     <span className="ai-icon">🤖</span>
-                    <h4 className="ai-card-title">Powered by Google Gemma 3 AI</h4>
+                    <h4 className="ai-card-title">Powered by JobWise</h4>
                   </div>
                   <p className="ai-card-description">
                     Your profile is analyzed by cutting-edge AI to provide:
@@ -929,7 +929,6 @@ const UserInformation = () => {
                     <div className="time-details">
                       <div className="time-title">Estimated Processing Time</div>
                       <div className="time-value">10-20 seconds</div>
-                      <div className="time-note">Powered by Google's fast AI infrastructure</div>
                     </div>
                   </div>
                 </div>
