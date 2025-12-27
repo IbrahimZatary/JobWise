@@ -420,7 +420,7 @@ const CareerOverView = () => {
       <div className="career-header">
         <div className="header-content">
           <h1 className="career-title">
-            <span className="title-icon">🎯</span>
+            <span className="title-icon"></span>
             Your Personalized Career Paths
           </h1>
           
@@ -488,8 +488,8 @@ const CareerOverView = () => {
           <div className={`ai-notice ${aiGenerated ? 'ai-active' : 'ai-fallback'}`}>
             {aiGenerated ? (
               <>
-                <span className="ai-icon">🤖</span>
-                <span>Recommendations powered by Google Gemma 3 AI</span>
+                <span className="ai-icon"></span>
+                <span>Recommendations powered by JobWise</span>
               </>
             ) : (
               <>
@@ -541,7 +541,7 @@ const CareerOverView = () => {
               {/* Job Description */}
               <div className="job-description-section">
                 <div className="description-header">
-                  <span className="description-icon">📋</span>
+                  <span className="description-icon"></span>
                   <h4>Career Overview</h4>
                 </div>
                 <div className="job-description-content">
@@ -720,7 +720,7 @@ const CareerOverView = () => {
             className="action-btn restart-btn"
             disabled={printMode}
           >
-            <span className="btn-icon">↺</span>
+            <span className="btn-icon"></span>
             Explore More Careers
           </button>
           
@@ -744,25 +744,12 @@ const CareerOverView = () => {
         
         <div className="disclaimer-section">
           <div className="disclaimer-content">
-            <h5 className="disclaimer-title">Important Information</h5>
             <p className="disclaimer-text">
               <strong>Note:</strong> These recommendations are generated based on the information you provided. 
-              Salary ranges are estimates for entry-level positions in Jordan and UAE markets and may vary based 
-              on experience, company, and specific location. Course links are provided for educational purposes only.
+              Salary ranges are estimates for entry-level positions in Jordan and UAE markets.
             </p>
             
-            <div className="data-source-info">
-              <p className="data-source">
-                <strong>Data Source:</strong> 
-                {aiGenerated 
-                  ? ' AI-generated using Google Gemma 3 • Last updated: ' + 
-                    (localStorage.getItem('aiTimestamp') ? 
-                      new Date(localStorage.getItem('aiTimestamp')).toLocaleDateString() : 
-                      'Just now')
-                  : ' Pre-defined career database • Refresh to try AI service again'
-                }
-              </p>
-            </div>
+  
           </div>
         </div>
       </div>
