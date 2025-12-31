@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../Styles/career.css';
 
+
 const CareerOverView = () => {
   const navigate = useNavigate();
   const [recommendations, setRecommendations] = useState(null);
@@ -10,6 +11,15 @@ const CareerOverView = () => {
   const [error, setError] = useState('');
   const [aiGenerated, setAiGenerated] = useState(false);
   const [printMode, setPrintMode] = useState(false);
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+    
+    // Also scroll to top if there's a hash in the URL
+    if (window.location.hash) {
+      window.location.hash = '';
+    }
+  }, []);
 
   // Helper: Sanitize text to prevent XSS
   const sanitizeText = (text, maxLength = 200) => {
@@ -429,9 +439,7 @@ const CareerOverView = () => {
           {userData && (
             <div className="user-summary-card">
               <div className="user-profile">
-                <div className="avatar-placeholder">
-                  {userData.userInfo?.name?.charAt(0).toUpperCase() || 'U'}
-                </div>
+                
                 <div className="user-details">
                   <h3 className="user-name">
                     {sanitizeText(userData.userInfo?.name || 'User', 30)}
@@ -490,7 +498,7 @@ const CareerOverView = () => {
               </>
             ) : (
               <>
-                <span className="fallback-icon">⚠️</span>
+                
                 <span>Using pre-defined recommendations (AI service unavailable)</span>
               </>
             )}
@@ -574,37 +582,7 @@ const CareerOverView = () => {
                   <h4>Expected Monthly Salaries</h4>
                 </div>
                 
-                {/* Salary Chart */}
-                <div className="salary-chart">
-                  <div className="chart-bars">
-                    <div className="chart-bar">
-                      <div className="bar-label">Jordan 🇯🇴</div>
-                      <div className="bar-container">
-                        <div 
-                          className="bar-fill jordan-bar"
-                          style={{ width: `${getSalaryPercentage(job.salaries?.jordan, 'jordan')}%` }}
-                        >
-                          <span className="bar-amount">
-                            {job.salaries?.jordan || '$800 - $2,500'}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="chart-bar">
-                      <div className="bar-label">UAE 🇦🇪</div>
-                      <div className="bar-container">
-                        <div 
-                          className="bar-fill uae-bar"
-                          style={{ width: `${getSalaryPercentage(job.salaries?.uae, 'uae')}%` }}
-                        >
-                          <span className="bar-amount">
-                            {job.salaries?.uae || '$3,000 - $6,000'}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               
                 
                 {/* Salary Cards */}
                 <div className="salaries-grid">
