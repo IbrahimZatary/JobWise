@@ -42,7 +42,7 @@ Return ONLY valid JSON format:
     }
   ]
 }
-
+& about the courses just take from those platform (Udemy/Coursera/edX/LinkedIn Learning)
 Do not include any other text, only the JSON.`;
 
   try {

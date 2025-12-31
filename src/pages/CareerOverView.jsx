@@ -1,4 +1,3 @@
-// CareerOverView.jsx - ENHANCED PRODUCTION VERSION
 import { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../Styles/career.css';
@@ -729,7 +728,7 @@ const CareerOverView = () => {
             disabled={printMode}
           >
             <span className="btn-icon">🖨️</span>
-            Print Recommendations
+            Download as PDF 
           </button>
           
           <button 

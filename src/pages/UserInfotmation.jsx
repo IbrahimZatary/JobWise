@@ -1,4 +1,3 @@
-// UserInformation.jsx - ENHANCED PRODUCTION VERSION
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../Styles/user-info.css';
@@ -100,7 +99,7 @@ const UserInformation = () => {
 
   // Handle other passion text change
   const handleOtherChange = useCallback((e) => {
-    const value = e.target.value.substring(0, 50); // Limit length
+    const value = e.target.value.substring(0, 50); 
     setOtherPassion(value);
     if (value) {
       setSelectedPassion('');
@@ -113,7 +112,7 @@ const UserInformation = () => {
     const { value, checked } = e.target;
     setSelectedSkills(prev => {
       if (checked) {
-        return [...prev, value].slice(0, 10); // Limit to 10 skills
+        return [...prev, value].slice(0, 10); 
       } else {
         return prev.filter(skill => skill !== value);
       }

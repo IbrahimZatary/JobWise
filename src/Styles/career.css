@@ -177,6 +177,15 @@
   margin-top: 10px;
   
 }
+ .skill-match-indicator
+{
+  margin-left: 20px;;
+}
+.job-title-section 
+{
+  text-align: center;
+  color: #854db9;
+}
 
 /* =====================================================
    COURSES - FIXED IMAGE SIZE

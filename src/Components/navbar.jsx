@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = () => { 
   //Navigate to route when press a button 
   const navigate = useNavigate();
   const handleSubmit =()=>{
