@@ -76,6 +76,7 @@
      text-decoration: none;
      font-size: 0.95rem;
      transition: filter 0.2s ease;
+     cursor: pointer;
    }
    
    .navbar-lists ul li a:hover {

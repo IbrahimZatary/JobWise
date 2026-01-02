@@ -17,8 +17,20 @@ Skills: ${skills.join(', ') || 'Various skills'}
 
 Focus on Middle East opportunities (Jordan and UAE specifically).
 Include realistic junior monthly salary ranges for both countries.
-Suggest 2 online courses for each job with platform names.
-Important : Be Sure to return valid course exact url of the course in the platform
+
+IMPORTANT: For courses, DO NOT make up course names or URLs.
+Instead, use these EXACT course categories ONLY:
+
+If a role doesn't match these categories, use SEARCH URLs instead:
+- LinkedIn Learning: "https://www.linkedin.com/learning/search?keywords=ROLE_NAME"
+- Udemy: "https://www.udemy.com/courses/search/?src=ukw&q=ROLE_NAME"
+- Coursera: "https://www.coursera.org/search?query=ROLE_NAME"
+
+For courses: ONLY suggest REAL, EXISTING courses with these EXACT URLs:
+If a role doesn't match these categories, use SEARCH URLs instead:
+- LinkedIn Learning: "https://www.linkedin.com/learning/search?keywords=ROLE_NAME"
+- Udemy: "https://www.udemy.com/courses/search/?src=ukw&q=ROLE_NAME"
+- Coursera: "https://www.coursera.org/search?query=ROLE_NAME"
 
 Return ONLY valid JSON format:
 {
@@ -61,7 +73,7 @@ Do not include any other text, only the JSON.`;
             parts: [{ text: prompt }] 
           }],
           generationConfig: {
-            temperature: 0.7,
+            temperature: 0.3,
             topP: 0.8,
             maxOutputTokens: 2000
           }
@@ -113,12 +125,12 @@ Do not include any other text, only the JSON.`;
       }
     } else {
       const errorText = await response.text();
-      console.error('❌ AI API error:', errorText.substring(0, 200));
+      console.error(' AI API error:', errorText.substring(0, 200));
       throw new Error(`AI service error: ${response.status}`);
     }
 
   } catch (error) {
-    console.error('💥 AI service failed:', error.message);
+    console.error(' AI service failed:', error.message);
     
     // Enhanced fallback (users won't notice)
     console.log('🔄 Using JobWise enhanced recommendations');

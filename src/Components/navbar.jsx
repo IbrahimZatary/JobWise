@@ -10,7 +10,11 @@ const NavBar = () => {
   
   // Check if we're NOT on the user route (to hide button on /user and its subroutes)
   const isNotUserRoute = !location.pathname.startsWith("/user");
-
+  const linkToHome = () => 
+  {
+    navigate('/');
+  }
+  
   const handleSubmit = () => {
     navigate('/user');
   }
@@ -49,7 +53,7 @@ const NavBar = () => {
       {/* Menu */}
       <div className="navbar-lists">
         <ul>
-          <li><a href="#Home">Home</a></li>
+          <li><a onClick={linkToHome}>Home</a></li>
           <li><a href="#Footer">About us</a></li>
           <li>
             {/* Show button only on home route */}
